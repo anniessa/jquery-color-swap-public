@@ -8,7 +8,7 @@ function onReady() {
     $("body").on('click', ".generateBtn", calculateGenerate)
     $(document).on('click', ".yellowBtn", changeYellow)
     $(document).on('click', ".deleteBtn", deleteDiv)
-    render();
+
     }
 
 function calculateGenerate() {
@@ -29,6 +29,8 @@ function deleteDiv() {
     
 function render() {
     console.log('in add div');
+    $("div").empty();
+    
     $("body").append(`<div>`);
     $("div").append(`
     <p>${generateCount}</p>
