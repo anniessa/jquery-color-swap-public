@@ -1,6 +1,6 @@
 $(document).ready(onReady);
 
-let generateCount = ;
+let generateCount = 0;
 
 function onReady() {
     console.log('in on ready!');
@@ -19,7 +19,7 @@ function addDiv() {
 function render() {
     console.log('in render');
     $("div").append(`
-    <p>${generateCount}++</p>
+    <p>${generateCount++}</p>
     `)
     
 
