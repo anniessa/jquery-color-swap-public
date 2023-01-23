@@ -1,6 +1,6 @@
 $(document).ready(onReady);
 
-let generateCount = 0;
+let generateCount = ;
 
 function onReady() {
     console.log('in on ready!');
@@ -12,12 +12,15 @@ function onReady() {
 function addDiv() {
     console.log('in add div');
     $("body").append(`<div>`);
-    <p>${generateCount}++ I want this to show how many times generate button was pushed</p>
-
+    render();
     
 }
 
 function render() {
+    console.log('in render');
+    $("div").append(`
+    <p>${generateCount}++</p>
+    `)
     
 
     
