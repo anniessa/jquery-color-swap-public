@@ -13,13 +13,14 @@ function onReady() {
     }
     
 function changeYellow() {
+    console.log('in change yellow:');
     $(this).css("backgroundColor", "yellow");
     
 }
 
 function deleteDiv() {
     console.log('in delete div');
-    $(this).closest('div');
+    $(this).closest('div').remove();
     
 }
     
