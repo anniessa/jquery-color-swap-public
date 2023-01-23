@@ -3,7 +3,7 @@ $(document).ready(onReady);
 function onReady() {
     console.log('in on ready!');
 
-    $("body").on('click', "#generateBtn", buttonDiv)
+    $("body").on('click', ".generateBtn", buttonDiv)
         
     }
     
@@ -15,7 +15,7 @@ function buttonDiv() {
 }
 
 function render() {
-    $("body").append("div")
+    $("body").append(`<div>`)
 
     
 }
