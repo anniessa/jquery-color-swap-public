@@ -18,7 +18,7 @@ function calculateGenerate() {
     
 function changeYellow() {
     console.log('in change yellow:');
-    $("div").addClass('.yellowBackground');
+    $("div").addClass('yellowBackground');
 }
 
 function deleteDiv() {
