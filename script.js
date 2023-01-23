@@ -8,6 +8,7 @@ function onReady() {
     $("body").on('click', ".generateBtn", calculateGenerate)
     $(document).on('click', ".yellowBtn", changeYellow)
     $(document).on('click', ".deleteBtn", deleteDiv)
+    render();
     }
 
 function calculateGenerate() {
