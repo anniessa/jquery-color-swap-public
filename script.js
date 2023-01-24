@@ -6,7 +6,7 @@ function onReady() {
     console.log('in on ready!');
 
     $("body").on('click', ".generateBtn", calculateGenerate)
-    $(document).on('click', ".yellowBtn", changeYellow)
+    $(document).on('click', "div", changeYellow)
     $(document).on('click', ".deleteBtn", deleteDiv)
 
     }
@@ -19,7 +19,7 @@ function calculateGenerate() {
     
 function changeYellow() {
     console.log('in change yellow:');
-    $("div").addClass('yellowBackground');
+    $(this).addClass('yellowBackground');
 }
 
 function deleteDiv() {
@@ -29,13 +29,12 @@ function deleteDiv() {
     
 function render() {
     console.log('in add div');
-    $("div").empty();
-    
-    $("body").append(`<div>`);
-    $("div").append(`
+    $("body").append(`
+    <div>
     <p>${generateCount}</p>
     <button class="yellowBtn">Yellow</button>
     <button class="deleteBtn">Delete</button>
+    </div>
     `)
     
 }
